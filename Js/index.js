@@ -30,35 +30,30 @@ loginHandle.addEventListener("submit", (e) => {
   // const loginPage = document.getElementById("loginPage");
   // const dashboard = document.getElementById("dashboard");
 
-  const username = "alimChowdury";
-  const password = "pkapepe-4592";
+  const username = "admin";
+  const password = "@adMinPa1]";
   const userConfirmPassword = password;
   if (userName.value === username && userPassword.value === password && ConfirmPassword.value === userConfirmPassword) {
     // myBtn.style.display = "none";
     // loginPage.style.display = "none";
     // dashboard.style.display = "block";
-    window.location.href = 'adminPannel.html';
+    window.location.href = "adminPannel.html";
   } else {
     return alert("Sorry your password is wrong");
   }
 });
-const welcomeMessage = document.getElementById('welcomeMessage');
-const welcome = document.getElementById('welcomeBtn');
-welcome.addEventListener('click', () => {
-  const welcomeInput = document.getElementById('welcomeInput').value;
+const welcomeMessage = document.getElementById("welcomeMessage");
+const welcome = document.getElementById("welcomeBtn");
+welcome.addEventListener("click", () => {
+  const welcomeInput = document.getElementById("welcomeInput").value;
   welcomeMessage.innerText = welcomeInput;
-  
-  console.log(welcomeMessage.innerText)
+
+  console.log(welcomeMessage.innerText);
   // return welcomeMessage.innerText= " "
-})
-
-
-
-
-
+});
 
 // Disable right-click
-document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
@@ -68,10 +63,10 @@ document.onkeydown = (e) => {
   // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
   if (
     event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    ctrlShiftKey(e, "I") ||
+    ctrlShiftKey(e, "J") ||
+    ctrlShiftKey(e, "C") ||
+    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
   )
     return false;
 };
