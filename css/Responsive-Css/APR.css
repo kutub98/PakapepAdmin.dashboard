@@ -1,0 +1,101 @@
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+    .header{
+        text-align: center;
+    }
+    .header h1{
+        font-size: 22px;  
+    }
+    .editBoxBody {
+        padding: 4px;
+    }
+
+    #BannerBox, #logoBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 40px 0;
+        border: 0.5px solid gray;
+        padding: 15px 0;
+        background-color: rgb(251, 251, 251);
+    }
+    .logoAndBanner{
+        padding: 0px 15px;
+    }
+    form button {
+        background: red;
+        border: none;
+        font-size: 18px;
+        color: white;
+        padding: 12px;
+    }
+
+    .ProceedProgess {
+        width: 100%;
+        position: relative;
+        background: rgb(241, 240, 236);
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .ProceedProgess label, .ProceedProgess button, .ProceedProgess input {
+        padding: 6px 5px;
+        background-color: rgb(243, 236, 236);
+        border: none;
+    }
+    .ProceedProgess input{
+        border: .5px solid rgba(0, 0, 0, 0.493);
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 750px) {
+    .header{
+        text-align: center;
+    }
+    .header h1{
+        font-size: 22px;  
+    }
+    .editBoxBody {
+        padding: 23px;
+    }
+
+    #BannerBox, #logoBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 40px 0;
+        border: 0.5px solid gray;
+        padding: 15px 0;
+        background-color: rgb(251, 251, 251);
+    }
+    .logoAndBanner{
+        padding: 0px 15px;
+    }
+    form button {
+        background: red;
+        border: none;
+        font-size: 18px;
+        color: white;
+        padding: 12px;
+    }
+
+    .ProceedProgess {
+        width: 100%;
+        position: relative;
+        background: rgb(241, 240, 236);
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .ProceedProgess label, .ProceedProgess button, .ProceedProgess input {
+        padding: 6px 5px;
+        background-color: rgb(243, 236, 236);
+        border: none;
+    }
+    .ProceedProgess input{
+        border: .5px solid rgba(0, 0, 0, 0.493);
+    }
+}
