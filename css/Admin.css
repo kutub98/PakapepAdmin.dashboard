@@ -45,16 +45,17 @@ h2,h3, h5, h4, h6, input,span {
     border: .5px solid gray;
     padding: 15px 0;
     background-color: rgb(251, 251, 251);
+    align-items: center;
 }
-form input{
+.form input{
     padding: 10px 10px;
     background: white !important;
     border: #b3b3b3 !important;
 }
-form input:focus{
+.form input:focus{
    border: none !important;
 }
-form button {
+.form button {
     background: red;
     border: none;
     font-size: 18px;
@@ -152,3 +153,50 @@ button{
 .label{
     display: flex;
 }
+.editArea,
+.editName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Delete,
+#Save{
+    margin-bottom: 4px;
+}
+button{
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.ConfirmButton{
+    position: relative;
+}
+#bannerImg,
+#blah{
+    width: 300px !important;
+    height: 100px !important;
+}
+
+button#SaveALL {
+    left: 50%;
+    position: absolute;
+    padding: 10px;
+    top: 5px;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button:hover{
+    background-color: #fecd29 !important;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Admin.css" />
     <link rel="stylesheet" href="css/Responsive-Css/APR.css" />
     <title>Admin Pannel</title>
+    
   </head>
   <body>
     <div class="editBoxBody">
@@ -14,57 +15,73 @@
         <h1>Landing Page Editor</h1>
       </div>
       <div class="editMainBox">
+        <!-- logo and banner box -->
         <div class="logoAndBanner">
+          <!-- logo box  -->
           <div class="logoBox">
-            <form action="" id="logoBox">
-              <input type="file" value="LOGO CHANGE" readonly />
-              <input type="text" value="LINK" readonly />
-              <input type="text" value="BROWSER" readonly />
-              <button type="submit" value="Save" id="logoImage">SAVE</button>
-            </form>
-          </div>
-          <div class="BannerBox">
-            <form action="" id="BannerBox">
-              <input type="file" value="CHANGE BANNER IMAGE" readonly />
-              <input type="color" value="" class="colors" />
-              <input type="text" id="BG" value="CHANGE COLOR" readonly />
-              <button type="submit" value="Save">SAVE</button>
-            </form>
-          </div>
-        </div>
-        <div class="areaBox">
-          <div class="areaSetup">
-            <h1 class="areaText">Area setup</h1>
-            <div class="areaProceed">
-              <div class="ProceedProgess">
-                <div class="label">
-                  <label for="">How many area</label>
-                  <input type="number" />
+            <div class="form" action="" id="logoBox">
+                <div id="displayLogo">
+                  <img id="blah" src="#" alt="your image" />
+                  <p>Logo *(Ratio 300 x 100, png file)</p>
                 </div>
-                <button type="submit" class="Proceed">Proceed</button>
-              </div>
+               <input type="file" name="file"  id="files" readonly />
+              
+               <input type="text" value="BROWSER" readonly />
+               <button id="FileSubmit">Save</button>
             </div>
           </div>
-          <div class="areaTable">
-            <table>
-              <tr>
-                <th>SL.</th>
-                <th>Area Name</th>
-                <th>Image</th>
-                <th>Action</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Area name</td>
-                <td>Image</td>
-                <td><button>Save</button></td>
-              </tr>
-            </table>
+          <!-- banner box  -->
+          <div class="BannerBox">
+            <div class='form' action="" id="BannerBox">
+              <div>
+                <img id="bannerImg" src="#" alt="your image" />
+                <p>Banner *(Ratio 500 x 300, png file)</p>
+              </div>
+              <input type="file" name="file"  id="Banner" readonly />
+             
+              <input type="text" value="BROWSER" readonly />
+              <button id="BannerSubmit">Save</button>
+            </div>
+          </div>
+          <!-- color box  -->
+          <div class=" colorBox BannerBox">
+            <div class='form' action="" id="BannerBox">
+              <div style="width: 200px; height: 20px;">Banner BG color</div>
+               <input type="color" name="color" id="color" class="colors" />
+               <input type="text" id="BG" value="CHANGE COLOR" readonly />
+               <button type="submit" id="SubmitColor">SAVE</button>
+            </div>
           </div>
         </div>
       </div>
+       <div class="areaSetup">
+        <h1 class="areaText">Area setup</h1>
+      <div class="areaProceed"> -->
+         <div class="ProceedProgess">
+          <label for="">How many area</label>
+        <input type="number" id="areaNumber" />
+        <button id="proceedNow">SUBMIT</button>
+        </div>
+      </div>
+      <!-- table box  -->
+      <div class="table">
+        <table id="table">
+          <tr id="parmanent">
+            <td>SL</td>
+            <td>Area Name</td>
+            <td>Image setup</td>
+            <td>Choose file</td>
+            <td>Action</td>
+          </tr>
+        </table>
+      </div>
     </div>
-
-    <script src="Js/adminDashboard.js"></script>
+  </div>
+   <div style="width: 100%;" class="ConfirmButton">
+      <button id="SaveALL" style="width:50%; margin: auto; padding: 10px" id="submit">Confirm Submit</button>
+    </div>
+    <script src="./Js/todo.js"></script>
+    <script src="Js/adminDashboard.js"></script> 
+   
   </body>
 </html>

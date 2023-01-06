@@ -22,7 +22,7 @@
     .logoAndBanner{
         padding: 0px 15px;
     }
-    form button {
+    .form button {
         background: red;
         border: none;
         font-size: 18px;
@@ -72,7 +72,7 @@
     .logoAndBanner{
         padding: 0px 15px;
     }
-    form button {
+    .form button {
         background: red;
         border: none;
         font-size: 18px;

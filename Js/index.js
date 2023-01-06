@@ -1,24 +1,4 @@
-// //  modal
-// const modal = document.getElementById("myModal");
 
-// // modal button
-// const btn = document.getElementById("myBtn");
-
-// const span = document.getElementsByClassName("close")[0];
-
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
-
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
 
 const loginHandle = document.getElementById("loginHandle");
 loginHandle.addEventListener("submit", (e) => {
@@ -31,9 +11,9 @@ loginHandle.addEventListener("submit", (e) => {
   // const dashboard = document.getElementById("dashboard");
 
   const username = "admin";
-  const password = "@adMinPa1]";
+  const password = "123";
   const userConfirmPassword = password;
-  if (userName.value === username && userPassword.value === password && ConfirmPassword.value === userConfirmPassword) {
+  if (userName.value === username && userPassword.value === password) {
     // myBtn.style.display = "none";
     // loginPage.style.display = "none";
     // dashboard.style.display = "block";
@@ -42,13 +22,5 @@ loginHandle.addEventListener("submit", (e) => {
     return alert("Sorry your password is wrong");
   }
 });
-// const welcomeMessage = document.getElementById("welcomeMessage");
-// const welcome = document.getElementById("welcomeBtn");
-// welcome.addEventListener("click", () => {
-//   const welcomeInput = document.getElementById("welcomeInput").value;
-//   welcomeMessage.innerText = welcomeInput;
 
-//   console.log(welcomeMessage.innerText);
-//   // return welcomeMessage.innerText= " "
-// });
 
